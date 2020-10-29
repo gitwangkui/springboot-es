@@ -1,0 +1,7 @@
+server:
+  port: 18085
+
+spring:
+  ## 默认为127.0.0.1:9200 ,修改es健康检查地址为实际你的es地址  elasticsearch:    rest:      uris: ["http://127.0.0.1:9200"]  data:    elasticsearch:      repositories:        enabled: true
+      ## 实际使用es的cluster-nodes      cluster-nodes: 127.0.0.1:9300
+      ## 实际使用es的cluster-name      cluster-name: my-es
